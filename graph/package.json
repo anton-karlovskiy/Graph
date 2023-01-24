@@ -4,13 +4,15 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ Sneh1999/Learnweb3",
-    "create-local": "graph create --node http://localhost:8020/ Sneh1999/Learnweb3",
-    "remove-local": "graph remove --node http://localhost:8020/ Sneh1999/Learnweb3",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 Sneh1999/Learnweb3"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ anton-karlovskiy/learnweb3",
+    "create-local": "graph create --node http://localhost:8020/ anton-karlovskiy/learnweb3",
+    "remove-local": "graph remove --node http://localhost:8020/ anton-karlovskiy/learnweb3",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 anton-karlovskiy/learnweb3",
+    "test": "graph test"
   },
   "dependencies": {
-    "@graphprotocol/graph-cli": "0.26.0",
-    "@graphprotocol/graph-ts": "0.24.1"
-  }
+    "@graphprotocol/graph-cli": "0.37.7",
+    "@graphprotocol/graph-ts": "0.29.1"
+  },
+  "devDependencies": { "matchstick-as": "0.5.0" }
 }
